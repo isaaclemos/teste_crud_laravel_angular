@@ -9,10 +9,11 @@ use App\Models\Product;
 
 class ProductController extends Controller
 {
-    //
+
     public function index()
     {
-        return Product::all();
+        $products = Product::all();
+        return response()->json($products);
     }
 
     public function store(ProductValidationRequest $request)
@@ -24,7 +25,7 @@ class ProductController extends Controller
 
     public function show(Product $product)
     {
-        return $product;
+        return response()->json($product);
     }
 
     public function update(ProductValidationRequest $request, Product $product)
