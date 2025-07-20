@@ -1,0 +1,28 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{ product.id ? 'Editar Produto' : 'Adicionar Produto' }}</h4>
+    <button type="button" class="btn-close" (click)="this.modalService.dismiss()" ></button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="mb-3">
+        <label>Nome</label>
+        <input class="form-control" [(ngModel)]="product.name" name="name" />
+      </div>
+      <div class="mb-3">
+        <label>Descrição</label>
+        <input class="form-control" [(ngModel)]="product.description" name="description" />
+      </div>
+      <div class="mb-3">
+        <label>Preço</label>
+        <input type="number" step="0.1" class="form-control" [(ngModel)]="product.price" name="price" />
+      </div>
+      <div class="mb-3">
+        <label>Quantidade em estoque</label>
+        <input type="number" class="form-control" [(ngModel)]="product.stock" name="stock" />
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-secondary" (click)="this.modalService.dismiss()">Cancelar</button>
+    <button class="btn btn-primary" (click)="this.modalService.close(product)">Salvar</button>
+  </div>

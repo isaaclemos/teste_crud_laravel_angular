@@ -1,0 +1,15 @@
+<div class="modal-header">
+  <h4 class="modal-title">Confirmar</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+  <p>Você tem certeza que deseja remover este produto?</p>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="activeModal.dismiss('cancel')">
+    Cancelar
+  </button>
+  <button type="button" class="btn btn-danger" (click)="activeModal.close('confirm')">
+    Confirmar
+  </button>
+</div>
