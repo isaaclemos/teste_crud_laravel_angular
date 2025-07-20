@@ -1,59 +1,51 @@
-# Front
+# 🖥️ Frontend - Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.0.
+Este diretório contém o projeto frontend da aplicação, desenvolvido com [Angular](https://angular.io/). A interface permite o gerenciamento de produtos por meio de uma API REST construída em Laravel (localizada na pasta `api_project`).
 
-## Development server
+---
 
-To start a local development server, run:
+## 🔧 Funcionalidades
+
+- ✅ Listagem paginada de produtos
+- ➕ Criação de novos produtos
+- ✏️ Edição de produtos existentes
+- ❌ Exclusão com confirmação
+- 🔁 Integração com a API Laravel via HTTP
+- 🧩 Interface com Angular + Bootstrap
+
+---
+
+## 📦 Requisitos
+
+- [Node.js](https://nodejs.org/) v18 ou superior
+- Angular CLI v15 ou superior
+
+---
+
+## ▶️ Como executar
 
 ```bash
+# 1. Instalar as dependências
+npm install
+
+# 2. Iniciar o servidor Angular
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+# 3. Acesse no navegador
+http://localhost:4200
 
-## Code scaffolding
+📁 Estrutura de Pastas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+front/
+├── src/
+│   ├── app/
+│   │   ├── components/          # Componentes principais
+│   │   ├── interfaces/          # Tipagens (Product, etc.)
+│   │   ├── services/            # Serviços de comunicação com a API
+│   │   ├── resources/           # Dados auxiliares e mocks
+│   │   └── app.component.ts     # Componente principal
+├── angular.json                # Configuração do Angular
+├── package.json                # Dependências do projeto
+└── tsconfig.json               # Configuração do TypeScript
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
