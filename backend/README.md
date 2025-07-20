@@ -8,7 +8,6 @@ Este diretório contém a API REST da aplicação, desenvolvida com [Laravel](ht
 
 - 📦 CRUD completo de produtos
 - 🌐 API RESTful com JSON
-- 🔐 Middleware para segurança básica
 - 📁 Arquitetura MVC organizada
 - 📂 Banco de dados em arquivo SQLite
 
