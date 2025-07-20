@@ -1,6 +1,6 @@
 # 🖥️ Frontend - Angular
 
-Este diretório contém o projeto frontend da aplicação, desenvolvido com [Angular](https://angular.io/). A interface permite o gerenciamento de produtos por meio de uma API REST construída em Laravel (localizada na pasta `api_project`).
+Este diretório contém o projeto frontend da aplicação, desenvolvido com [Angular](https://angular.io/). A interface permite o gerenciamento de produtos por meio de uma API REST construída em Laravel (localizada na pasta `backend`).
 
 ---
 

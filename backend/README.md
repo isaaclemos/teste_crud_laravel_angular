@@ -1,6 +1,6 @@
 # 🛠️ API Backend - Laravel
 
-Este diretório contém a API REST da aplicação, desenvolvida com [Laravel](https://laravel.com/). Ela fornece os endpoints necessários para a manipulação de produtos e serve de backend para o frontend Angular localizado na pasta `front`.
+Este diretório contém a API REST da aplicação, desenvolvida com [Laravel](https://laravel.com/). Ela fornece os endpoints necessários para a manipulação de produtos e serve de backend para o frontend Angular localizado na pasta `frontend`.
 
 ---
 
@@ -10,7 +10,7 @@ Este diretório contém a API REST da aplicação, desenvolvida com [Laravel](ht
 - 🌐 API RESTful com JSON
 - 🔐 Middleware para segurança básica
 - 📁 Arquitetura MVC organizada
-- 🌱 Seeds e migrations para banco de dados
+- 📂 Banco de dados em arquivo SQLite
 
 ---
 
@@ -18,28 +18,26 @@ Este diretório contém a API REST da aplicação, desenvolvida com [Laravel](ht
 
 - PHP >= 8.1
 - Composer
-- MySQL ou PostgreSQL
+- SQLite 3
 - Laravel 10+
-- Node.js (para assets com Vite, opcional)
 
 ---
 
 ## ▶️ Como executar
 
 ```bash
-# 1. Instale as dependências do PHP
+# 1. Instale as dependências do projeto
 composer install
 
 # 2. Gere a chave da aplicação
 php artisan key:generate
 
-# 3. Configure o banco de dados no arquivo .env
-
-# 4. Execute as migrations (e opcionalmente os seeds)
+# 3. Rode as migrations (e opcionalmente os seeders)
 php artisan migrate --seed
 
-# 5. Inicie o servidor local
+# 4. Inicie o servidor local
 php artisan serve
+
 
 
 🗃️ Estrutura de Pastas
